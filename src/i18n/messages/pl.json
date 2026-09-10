@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "homeTitle": "Nekera — nieruchomości na sprzedaż i wynajem",
+    "homeDescription": "Przeglądaj oferty sprzedaży i wynajmu. Znajdź mieszkanie, dom lub lokal dopasowany do Ciebie.",
+    "salesTitle": "Oferty sprzedaży",
+    "rentTitle": "Oferty wynajmu",
+    "aboutTitle": "O nas",
+    "contactTitle": "Kontakt"
+  },
+  "nav": {
+    "sales": "Sprzedaż",
+    "rent": "Wynajem",
+    "about": "O nas",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Znajdź miejsce,",
+    "titleItalic": "które zostaje z Tobą",
+    "subtitle": "Oferty sprzedaży i wynajmu od zaufanego biura nieruchomości.",
+    "searchSales": "Szukam na sprzedaż",
+    "searchRent": "Szukam na wynajem"
+  },
+  "home": {
+    "recentSales": "Polecane na sprzedaż",
+    "recentRent": "Polecane na wynajem",
+    "viewAll": "Zobacz wszystkie",
+    "agents": "Nasi agenci",
+    "ctaTitle": "Chcesz sprzedać lub wynająć nieruchomość?",
+    "ctaBody": "Opowiedz nam o swoim mieszkaniu — wrócimy z wyceną i planem działania.",
+    "ctaButton": "Skontaktuj się"
+  },
+  "search": {
+    "titleSales": "Nieruchomości na sprzedaż",
+    "titleRent": "Nieruchomości na wynajem",
+    "filters": "Filtry",
+    "query": "Szukaj",
+    "queryPlaceholder": "Tytuł lub opis",
+    "location": "Lokalizacja",
+    "anyLocation": "Wszystkie lokalizacje",
+    "type": "Typ",
+    "anyType": "Wszystkie typy",
+    "priceMin": "Cena od",
+    "priceMax": "Cena do",
+    "areaMin": "Powierzchnia od (m²)",
+    "bedsMin": "Sypialnie od",
+    "sort": "Sortowanie",
+    "sortNewest": "Najnowsze",
+    "sortPriceAsc": "Cena rosnąco",
+    "sortPriceDesc": "Cena malejąco",
+    "sortAreaDesc": "Największa powierzchnia",
+    "apply": "Pokaż oferty",
+    "reset": "Wyczyść",
+    "results": "{count, plural, one {# oferta} few {# oferty} other {# ofert}}",
+    "empty": "Brak ofert spełniających kryteria.",
+    "page": "Strona {page} z {pageCount}"
+  },
+  "listing": {
+    "sale": "Sprzedaż",
+    "rent": "Wynajem",
+    "priceOnRequest": "Cena na zapytanie",
+    "area": "{value} m²",
+    "beds": "{count, plural, one {# sypialnia} few {# sypialnie} other {# sypialni}}",
+    "floor": "Piętro {floor}/{total}",
+    "floorOnly": "Piętro {floor}",
+    "photos": "{count} zdjęć",
+    "features": "Udogodnienia",
+    "similar": "Podobne oferty",
+    "agent": "Twój konsultant",
+    "inquire": "Zapytaj o tę ofertę",
+    "back": "Wróć do listy",
+    "noPhoto": "Brak zdjęcia"
+  },
+  "about": {
+    "eyebrow": "Biuro",
+    "title": "Lokalna wiedza, spokojny proces",
+    "body": "{name} pomaga kupującym, najemcom i właścicielom przejść przez transakcję bez chaosu. Pracujemy na aktualnych ofertach z CRM Nekera — to, co widzisz na stronie, jest tym, co mamy w portfelu.",
+    "point1Title": "Oferty z pierwszej ręki",
+    "point1": "Każda publikacja pochodzi z naszego systemu. Żadnych nieaktualnych ogłoszeń z portali.",
+    "point2Title": "Agenci, nie call center",
+    "point2": "Rozmawiasz z osobą prowadzącą ofertę — z imienia, nazwiska i telefonu.",
+    "point3Title": "Sprzedaż i wynajem",
+    "point3": "Jeden zespół od mieszkania na start po lokal pod inwestycję."
+  },
+  "contact": {
+    "eyebrow": "Porozmawiajmy",
+    "title": "Napisz do nas",
+    "body": "Szukasz mieszkania, chcesz sprzedać lub po prostu zapytać o rynek? Zostaw kontakt — oddzwonimy.",
+    "success": "Dziękujemy. Wkrótce się odezwiemy.",
+    "error": "Nie udało się wysłać wiadomości. Spróbuj ponownie."
+  },
+  "form": {
+    "firstName": "Imię",
+    "lastName": "Nazwisko",
+    "email": "E-mail",
+    "phone": "Telefon",
+    "message": "Wiadomość",
+    "messagePlaceholder": "Opowiedz, czego szukasz",
+    "submit": "Wyślij",
+    "sending": "Wysyłanie…"
+  },
+  "footer": {
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "tagline": "Przestrzeń agenta — i jego klientów."
+  }
+}

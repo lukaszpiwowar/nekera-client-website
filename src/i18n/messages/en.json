@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "homeTitle": "Nekera — homes for sale and rent",
+    "homeDescription": "Browse sale and rental listings. Find an apartment, house, or commercial space that fits.",
+    "salesTitle": "Homes for sale",
+    "rentTitle": "Homes for rent",
+    "aboutTitle": "About us",
+    "contactTitle": "Contact"
+  },
+  "nav": {
+    "sales": "Buy",
+    "rent": "Rent",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Find a place",
+    "titleItalic": "that stays with you",
+    "subtitle": "Sale and rental listings from a trusted local agency.",
+    "searchSales": "I want to buy",
+    "searchRent": "I want to rent"
+  },
+  "home": {
+    "recentSales": "Featured for sale",
+    "recentRent": "Featured for rent",
+    "viewAll": "View all",
+    "agents": "Our agents",
+    "ctaTitle": "Thinking of selling or letting?",
+    "ctaBody": "Tell us about your property — we will come back with a valuation and a plan.",
+    "ctaButton": "Get in touch"
+  },
+  "search": {
+    "titleSales": "Properties for sale",
+    "titleRent": "Properties for rent",
+    "filters": "Filters",
+    "query": "Search",
+    "queryPlaceholder": "Title or description",
+    "location": "Location",
+    "anyLocation": "All locations",
+    "type": "Type",
+    "anyType": "All types",
+    "priceMin": "Price from",
+    "priceMax": "Price to",
+    "areaMin": "Area from (m²)",
+    "bedsMin": "Bedrooms from",
+    "sort": "Sort",
+    "sortNewest": "Newest",
+    "sortPriceAsc": "Price: low to high",
+    "sortPriceDesc": "Price: high to low",
+    "sortAreaDesc": "Largest area",
+    "apply": "Show listings",
+    "reset": "Clear",
+    "results": "{count, plural, one {# listing} other {# listings}}",
+    "empty": "No listings match these filters.",
+    "page": "Page {page} of {pageCount}"
+  },
+  "listing": {
+    "sale": "For sale",
+    "rent": "For rent",
+    "priceOnRequest": "Price on request",
+    "area": "{value} m²",
+    "beds": "{count, plural, one {# bedroom} other {# bedrooms}}",
+    "floor": "Floor {floor}/{total}",
+    "floorOnly": "Floor {floor}",
+    "photos": "{count} photos",
+    "features": "Features",
+    "similar": "Similar listings",
+    "agent": "Your consultant",
+    "inquire": "Ask about this listing",
+    "back": "Back to results",
+    "noPhoto": "No photo"
+  },
+  "about": {
+    "eyebrow": "The agency",
+    "title": "Local knowledge, a calm process",
+    "body": "{name} helps buyers, renters, and owners through a transaction without the noise. Listings on this site come straight from the Nekera CRM — what you see is what we have.",
+    "point1Title": "First-hand listings",
+    "point1": "Every publication comes from our system. No stale portal ads.",
+    "point2Title": "Agents, not a call centre",
+    "point2": "You speak with the person running the listing — name, phone, and all.",
+    "point3Title": "Sales and lettings",
+    "point3": "One team from a first apartment to an investment unit."
+  },
+  "contact": {
+    "eyebrow": "Let’s talk",
+    "title": "Write to us",
+    "body": "Looking for a home, selling, or just asking about the market? Leave your details — we will call back.",
+    "success": "Thank you. We will be in touch shortly.",
+    "error": "Could not send the message. Please try again."
+  },
+  "form": {
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "messagePlaceholder": "Tell us what you are looking for",
+    "submit": "Send",
+    "sending": "Sending…"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "tagline": "A workspace for agents — and their clients."
+  }
+}

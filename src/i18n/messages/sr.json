@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "homeTitle": "Nekera — nekretnine na prodaju i izdavanje",
+    "homeDescription": "Pregledajte ponudu prodaje i izdavanja. Pronađite stan, kuću ili lokal koji vam odgovara.",
+    "salesTitle": "Ponuda za prodaju",
+    "rentTitle": "Ponuda za izdavanje",
+    "aboutTitle": "O nama",
+    "contactTitle": "Kontakt"
+  },
+  "nav": {
+    "sales": "Prodaja",
+    "rent": "Izdavanje",
+    "about": "O nama",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Pronađite mesto",
+    "titleItalic": "koje ostaje sa vama",
+    "subtitle": "Ponuda prodaje i izdavanja od pouzdane agencije.",
+    "searchSales": "Tražim za kupovinu",
+    "searchRent": "Tražim za izdavanje"
+  },
+  "home": {
+    "recentSales": "Izdvajamo za prodaju",
+    "recentRent": "Izdvajamo za izdavanje",
+    "viewAll": "Pogledaj sve",
+    "agents": "Naši agenti",
+    "ctaTitle": "Želite da prodate ili izdate nekretninu?",
+    "ctaBody": "Recite nam o svojoj nekretnini — javićemo se sa procenom i planom.",
+    "ctaButton": "Kontaktirajte nas"
+  },
+  "search": {
+    "titleSales": "Nekretnine na prodaju",
+    "titleRent": "Nekretnine na izdavanje",
+    "filters": "Filteri",
+    "query": "Pretraga",
+    "queryPlaceholder": "Naslov ili opis",
+    "location": "Lokacija",
+    "anyLocation": "Sve lokacije",
+    "type": "Tip",
+    "anyType": "Svi tipovi",
+    "priceMin": "Cena od",
+    "priceMax": "Cena do",
+    "areaMin": "Površina od (m²)",
+    "bedsMin": "Sobe od",
+    "sort": "Sortiranje",
+    "sortNewest": "Najnovije",
+    "sortPriceAsc": "Cena rastuće",
+    "sortPriceDesc": "Cena opadajuće",
+    "sortAreaDesc": "Najveća površina",
+    "apply": "Prikaži ponudu",
+    "reset": "Poništi",
+    "results": "{count, plural, one {# oglas} few {# oglasa} other {# oglasa}}",
+    "empty": "Nema oglasa koji odgovaraju filterima.",
+    "page": "Strana {page} od {pageCount}"
+  },
+  "listing": {
+    "sale": "Prodaja",
+    "rent": "Izdavanje",
+    "priceOnRequest": "Cena na upit",
+    "area": "{value} m²",
+    "beds": "{count, plural, one {# soba} few {# sobe} other {# soba}}",
+    "floor": "Sprat {floor}/{total}",
+    "floorOnly": "Sprat {floor}",
+    "photos": "{count} fotografija",
+    "features": "Pogodnosti",
+    "similar": "Slični oglasi",
+    "agent": "Vaš konsultant",
+    "inquire": "Pitajte o ovom oglasu",
+    "back": "Nazad na listu",
+    "noPhoto": "Nema fotografije"
+  },
+  "about": {
+    "eyebrow": "Agencija",
+    "title": "Lokalno znanje, miran proces",
+    "body": "{name} pomaže kupcima, zakupcima i vlasnicima da prođu kroz transakciju bez haosa. Oglasi na sajtu dolaze iz Nekera CRM-a — što vidite, to i imamo.",
+    "point1Title": "Ponuda iz prve ruke",
+    "point1": "Svaka objava dolazi iz našeg sistema. Nema zastarelih portala.",
+    "point2Title": "Agenti, ne call centar",
+    "point2": "Razgovarate sa osobom koja vodi oglas — ime, telefon i sve.",
+    "point3Title": "Prodaja i izdavanje",
+    "point3": "Jedan tim od prvog stana do investicionog lokala."
+  },
+  "contact": {
+    "eyebrow": "Hajde da razgovaramo",
+    "title": "Pišite nam",
+    "body": "Tražite stan, prodajete ili samo pitate za tržište? Ostavi kontakt — javićemo se.",
+    "success": "Hvala. Uskoro ćemo se javiti.",
+    "error": "Poruka nije poslata. Pokušajte ponovo."
+  },
+  "form": {
+    "firstName": "Ime",
+    "lastName": "Prezime",
+    "email": "Email",
+    "phone": "Telefon",
+    "message": "Poruka",
+    "messagePlaceholder": "Recite nam šta tražite",
+    "submit": "Pošalji",
+    "sending": "Slanje…"
+  },
+  "footer": {
+    "rights": "Sva prava zadržana.",
+    "tagline": "Prostor za agente — i njihove klijente."
+  }
+}
