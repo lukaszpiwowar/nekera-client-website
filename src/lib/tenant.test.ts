@@ -22,4 +22,11 @@ describe('resolveTenantSlug', () => {
   it('uses the env fallback on localhost', () => {
     assert.equal(resolveTenantSlug('localhost:3001', 'acme-realty'), 'acme-realty');
   });
+
+  it('does not treat workers.dev as a tenant host', () => {
+    assert.equal(
+      resolveTenantSlug('nekera-client-website.lpiwowar.workers.dev', ''),
+      null,
+    );
+  });
 });
