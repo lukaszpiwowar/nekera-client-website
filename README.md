@@ -28,16 +28,13 @@ npx wrangler deploy
 
 Env builda: `NEXT_PUBLIC_API_URL=https://api.nekera.app` (bez `NEXT_PUBLIC_TENANT_SLUG`).
 
-GitHub (repo `nekera-client-website`): sekrety `CLOUDFLARE_API_TOKEN` i `CLOUDFLARE_ACCOUNT_ID` — workflow na `main` buduje i wdraża.
+GitHub (repo **nekera-client-website**, nie golem-n8n): sekrety `CLOUDFLARE_API_TOKEN` (Workers + Account) i `CLOUDFLARE_ACCOUNT_ID`. Token z Caddy (`CF_API_TOKEN`) to inny sekret.
 
-DNS (strefa `nekera.app`, proxied, **nie** Caddy): po pierwszym deployu skopiuj hostname `*.workers.dev` do sekretu `NEKERA_SITES_CNAME_TARGET` w **golem-n8n**. Workflow upsertuje CNAME `sites` i `*.sites`.
+Po udanym deployu Actions wypisze `*.workers.dev`. Ten hostname wklej jako `NEKERA_SITES_CNAME_TARGET` w **golem-n8n**, albo ręcznie w CF:
 
-Checklist ręczny (jeśli CNAME zostaje w dashboardzie CF):
-
-1. Deploy Workera (`npm run deploy`)
-2. `CNAME sites` → `{worker}.{account}.workers.dev` (proxied)
-3. `CNAME *.sites` → ten sam target (proxied)
-4. Smoke: zarejestrować slug → `https://{slug}.sites.nekera.app`
+1. `CNAME sites` → `{worker}.{account}.workers.dev` (proxied)
+2. `CNAME *.sites` → ten sam target (proxied)
+3. Smoke: `https://{slug}.sites.nekera.app`
 
 ## Dane publiczne
 

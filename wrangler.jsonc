@@ -4,6 +4,7 @@
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-09-01",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "workers_dev": true,
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
@@ -14,16 +15,9 @@
       "service": "nekera-client-website"
     }
   ],
-  "images": {
-    "binding": "IMAGES"
-  },
   "vars": {
     "NEXT_PUBLIC_API_URL": "https://api.nekera.app"
   },
-  "routes": [
-    { "pattern": "sites.nekera.app/*", "zone_name": "nekera.app" },
-    { "pattern": "*.sites.nekera.app/*", "zone_name": "nekera.app" }
-  ],
   "observability": {
     "enabled": true
   }
