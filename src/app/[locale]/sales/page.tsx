@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getRequestTenantSlug } from '@/lib/tenant.server';
 import { SearchView } from '@/views/SearchView';
 import {
   getListingTypes,
@@ -27,6 +28,8 @@ export default async function SalesPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const slug = await getRequestTenantSlug();
+  if (!slug) return null;
   const query = await searchParams;
   const values = Object.fromEntries(
     Object.entries(query).map(([key, value]) => [
@@ -36,7 +39,7 @@ export default async function SalesPage({
   );
 
   const [listings, locations, types] = await Promise.all([
-    getListings({
+    getListings(slug, {
       offerType: 'sale',
       q: values.q,
       locationId: values.locationId,
@@ -48,8 +51,8 @@ export default async function SalesPage({
       sort: values.sort as 'newest' | undefined,
       page: num(values.page),
     }),
-    getLocations(),
-    getListingTypes(),
+    getLocations(slug),
+    getListingTypes(slug),
   ]);
 
   return (

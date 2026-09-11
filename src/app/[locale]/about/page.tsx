@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getRequestTenantSlug } from '@/lib/tenant.server';
 import { AboutView } from '@/views/ContentViews';
 import { getAgency } from '@/shared/services/public-api';
 
@@ -15,6 +16,8 @@ export default async function AboutPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const agency = await getAgency();
+  const slug = await getRequestTenantSlug();
+  if (!slug) return null;
+  const agency = await getAgency(slug);
   return <AboutView agency={agency} />;
 }

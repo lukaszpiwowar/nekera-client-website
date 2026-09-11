@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import { getRequestTenantSlug } from '@/lib/tenant.server';
 import { HomeView } from '@/views/HomeView';
 import {
   getAgency,
@@ -16,11 +17,14 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function HomePage() {
+  const slug = await getRequestTenantSlug();
+  if (!slug) return null;
+
   const [agency, sales, rentals, agents] = await Promise.all([
-    getAgency(),
-    getRecentListings('sale'),
-    getRecentListings('rent'),
-    getAgents(),
+    getAgency(slug),
+    getRecentListings(slug, 'sale'),
+    getRecentListings(slug, 'rent'),
+    getAgents(slug),
   ]);
 
   return (

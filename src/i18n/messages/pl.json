@@ -101,5 +101,9 @@
   "footer": {
     "rights": "Wszelkie prawa zastrzeżone.",
     "tagline": "Przestrzeń agenta — i jego klientów."
+  },
+  "sites": {
+    "title": "Strony agencji Nekera",
+    "body": "Każde biuro ma własny adres https://slug.{host} — powstaje automatycznie przy rejestracji."
   }
 }

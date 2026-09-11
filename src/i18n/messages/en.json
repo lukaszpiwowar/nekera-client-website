@@ -101,5 +101,9 @@
   "footer": {
     "rights": "All rights reserved.",
     "tagline": "A workspace for agents — and their clients."
+  },
+  "sites": {
+    "title": "Nekera agency sites",
+    "body": "Each office gets https://slug.{host} automatically when the agency is registered."
   }
 }

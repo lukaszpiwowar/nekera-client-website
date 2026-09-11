@@ -101,5 +101,9 @@
   "footer": {
     "rights": "Sva prava zadržana.",
     "tagline": "Prostor za agente — i njihove klijente."
+  },
+  "sites": {
+    "title": "Sajtovi agencija Nekera",
+    "body": "Svaka kancelarija dobija https://slug.{host} automatski pri registraciji."
   }
 }

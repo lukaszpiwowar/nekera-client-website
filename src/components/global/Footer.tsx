@@ -1,10 +1,9 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
-import { getAgency } from '@/shared/services/public-api';
+import type { PublicAgency } from '@/shared/models/public.model';
 
-export async function Footer() {
+export async function Footer({ agency }: { agency: PublicAgency | null }) {
   const t = await getTranslations();
-  const agency = await getAgency();
   const year = new Date().getFullYear();
 
   return (

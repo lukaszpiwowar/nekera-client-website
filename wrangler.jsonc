@@ -1,0 +1,30 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "nekera-client-website",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-09-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "nekera-client-website"
+    }
+  ],
+  "images": {
+    "binding": "IMAGES"
+  },
+  "vars": {
+    "NEXT_PUBLIC_API_URL": "https://api.nekera.app"
+  },
+  "routes": [
+    { "pattern": "sites.nekera.app/*", "zone_name": "nekera.app" },
+    { "pattern": "*.sites.nekera.app/*", "zone_name": "nekera.app" }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}

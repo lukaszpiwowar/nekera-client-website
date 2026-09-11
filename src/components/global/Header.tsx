@@ -1,11 +1,10 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
-import { getAgency } from '@/shared/services/public-api';
+import type { PublicAgency } from '@/shared/models/public.model';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
-export async function Header() {
+export async function Header({ agency }: { agency: PublicAgency | null }) {
   const t = await getTranslations();
-  const agency = await getAgency();
 
   return (
     <header className="sticky top-0 z-50 border-b border-line/70 bg-white/90 backdrop-blur-md">

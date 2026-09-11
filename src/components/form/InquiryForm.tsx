@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { useTenantSlug } from '@/components/global/TenantProvider';
 import { Button } from '@/components/ui/button';
 import { createInquiry } from '@/shared/services/public-api';
 
@@ -13,6 +14,7 @@ export function InquiryForm({
   defaultMessage?: string;
 }) {
   const t = useTranslations();
+  const slug = useTenantSlug();
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>(
     'idle',
   );
@@ -25,7 +27,7 @@ export function InquiryForm({
       const email = String(formData.get('email') ?? '').trim();
       const phone = String(formData.get('phone') ?? '').trim();
       const message = String(formData.get('message') ?? '').trim();
-      await createInquiry({
+      await createInquiry(slug, {
         firstName,
         lastName: lastName || undefined,
         email: email || undefined,

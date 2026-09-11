@@ -11,10 +11,13 @@
 # next
 /.next/
 /out/
+.open-next/
+.wrangler/
 
 # env
 .env
 .env*.local
+.dev.vars
 
 # misc
 .DS_Store
