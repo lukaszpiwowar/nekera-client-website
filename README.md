@@ -2,6 +2,8 @@
 
 Publiczna strona nieruchomości. **Jedna aplikacja** serwuje wszystkie agencje: tenant wynika z hosta `https://{slug}.sites.nekera.app`.
 
+Deploy produkcji jest **tylko z dashboardu Cloudflare** (Git connected). Nie ma GitHub Actions.
+
 ## Uruchomienie lokalne
 
 ```bash
@@ -15,26 +17,28 @@ npm run dev
 
 Backend: `npm run start:dev` w `nekera-backend`.
 
-## Produkcja (Cloudflare)
+## Produkcja (Cloudflare Dashboard)
 
-Jednorazowy deploy (OpenNext → Worker). Nowy tenant **nie** wymaga nowego projektu — wystarczy `*.sites.nekera.app`.
+Workers & Pages → `nekera-client-website` → **Settings → Build**:
 
-```bash
-cp .dev.vars.example .dev.vars   # tylko lokalny preview
-npm run cf-build
-npx wrangler deploy
-# albo: npm run deploy
-```
+| Pole | Komenda |
+|------|---------|
+| Build command | `npx opennextjs-cloudflare build` |
+| Deploy command | `npx opennextjs-cloudflare deploy` |
+| Non-production deploy | `npx opennextjs-cloudflare upload` |
 
-Env builda: `NEXT_PUBLIC_API_URL=https://api.nekera.app` (bez `NEXT_PUBLIC_TENANT_SLUG`).
+Zmienna builda: `NEXT_PUBLIC_API_URL=https://api.nekera.app` (bez `NEXT_PUBLIC_TENANT_SLUG`).
 
-GitHub (repo **nekera-client-website**, nie golem-n8n): sekrety `CLOUDFLARE_API_TOKEN` (Workers + Account) i `CLOUDFLARE_ACCOUNT_ID`. Token z Caddy (`CF_API_TOKEN`) to inny sekret.
+`npm run build` zostaje jako `next build` — OpenNext sam go woła. Nie ustawiaj builda na `npm run build`.
 
-Po udanym deployu Actions wypisze `*.workers.dev`. Ten hostname wklej jako `NEKERA_SITES_CNAME_TARGET` w **golem-n8n**, albo ręcznie w CF:
+**Domains & Routes** (jednorazowo, w tym samym Workerze):
 
-1. `CNAME sites` → `{worker}.{account}.workers.dev` (proxied)
-2. `CNAME *.sites` → ten sam target (proxied)
-3. Smoke: `https://{slug}.sites.nekera.app`
+- `sites.nekera.app`
+- `*.sites.nekera.app`
+
+Jako **custom domain** Workera, nie CNAME na `*.workers.dev` jako origin.
+
+Push na `main` w tym repo odpala build w Cloudflare. Nowy tenant nie wymaga nowego projektu.
 
 ## Dane publiczne
 
